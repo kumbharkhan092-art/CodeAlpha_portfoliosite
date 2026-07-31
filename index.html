@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Your Name — Frontend Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="editor-shell">
+
+  <div class="titlebar">
+    <span class="dot red"></span>
+    <span class="dot yellow"></span>
+    <span class="dot green"></span>
+    <span class="titlebar-label">portfolio — your-name.dev</span>
+  </div>
+
+  <div class="tabs">
+    <a href="#hero" class="tab active">hero.jsx</a>
+    <a href="#about" class="tab">about.js<span class="dot-unsaved"></span></a>
+    <a href="#skills" class="tab">skills.json</a>
+    <a href="#projects" class="tab">projects.js</a>
+    <a href="#contact" class="tab">contact.js</a>
+  </div>
+
+  <section id="hero">
+    <div class="eyebrow">// available for opportunities</div>
+    <h1 class="hero-name">Your Name</h1>
+    <p class="hero-role">I'm a <strong>frontend developer</strong> who builds fast, accessible interfaces — currently deep in the CodeAlpha internship, shipping projects with HTML, CSS, and JavaScript.</p>
+    <div class="btn-row">
+      <a href="#projects" class="btn primary">View projects →</a>
+      <a href="/resume.pdf" class="btn ghost">Download résumé</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="eyebrow">// 01 — about</div>
+    <h2 class="section-title">About me</h2>
+    <p class="section-sub">A quick read, formatted the way I like to read everything.</p>
+
+    <div class="code-view">
+      <div class="gutter">1<br>2<br>3<br>4<br>5<br>6<br>7</div>
+      <div class="code-body">
+<span class="tok-key">const</span> <span class="tok-fn">developer</span> <span class="tok-punc">=</span> {<br>
+&nbsp;&nbsp;name: <span class="tok-str">"Your Name"</span>,<br>
+&nbsp;&nbsp;role: <span class="tok-str">"Frontend Developer"</span>,<br>
+&nbsp;&nbsp;based_in: <span class="tok-str">"Your City, Country"</span>,<br>
+&nbsp;&nbsp;focus: [<span class="tok-str">"clean UI"</span>, <span class="tok-str">"performance"</span>, <span class="tok-str">"accessibility"</span>],<br>
+&nbsp;&nbsp;<span class="tok-com">// currently building projects for the CodeAlpha internship</span><br>
+};
+
+
+      </div>
+    </div>
+    
+          </section>
+
+              <section id="skills">
+    <div class="eyebrow">// 02 — skills</div>
+    <h2 class="section-title">Skills</h2>
+        <p class="section-sub">Tools and languages I use to build things.</p>
+
+
+
+                <div class="skills-grid">
+      <div class="skill-chip">HTML5 <span class="lvl">●●●●○</span></div>
+      <div class="skill-chip">CSS3 <span class="lvl">●●●●○</span></div>
+      <div class="skill-chip">JavaScript <span class="lvl">●●●○○</span></div>
+      <div class="skill-chip">Responsive Design <span class="lvl">●●●●○</span></div>
+      <div class="skill-chip">Git & GitHub <span class="lvl">●●●○○</span></div>
+      <div class="skill-chip">UI Design <span class="lvl">●●●○○</span></div>
+             </div>
+
+
+                  </section>
+
+          <section id="projects">
+    <div class="eyebrow">// 03 — projects</div>
+    <h2 class="section-title">Projects</h2>
+    <p class="section-sub">A few things I've built recently.</p>
+
+       <div class="project-list">
+      <div class="project">
+        <div class="project-index">01</div>
+        <div>
+          <h3 class="project-title">Image Gallery</h3>
+          <p class="project-desc">A responsive image gallery with lightbox view, next/prev navigation, and smooth hover transitions.</p>
+          <div class="project-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+        </div>
+        <a href="#" class="project-link">View →</a>
+      </div>
+
+      <div class="project">
+        <div class="project-index">02</div>
+        <div>
+          <h3 class="project-title">Calculator</h3>
+          <p class="project-desc">A calculator app supporting all arithmetic operations, keyboard input, and real-time display updates.</p>
+          <div class="project-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+        </div>
+        <a href="#" class="project-link">View →</a>
+          </div>
+
+      <div class="project">
+        <div class="project-index">03</div>
+        <div>
+          <h3 class="project-title">Portfolio Site</h3>
+          <p class="project-desc">This site — a personal portfolio built with a code-editor inspired layout.</p>
+          <div class="project-tags"><span class="tag">HTML</span><span class="tag">CSS</span></div>
+        </div>
+        <a href="#" class="project-link">View →</a>
+      </div>
+    </div>
+                 </section>
+
+  <section id="contact">
+    <div class="eyebrow">// 04 — contact</div>
+    <h2 class="section-title">Get in touch</h2>
+    <p class="section-sub">Open to internships, freelance work, and collaborations.</p>
+
+    <div class="contact-links">
+      <a href="mailto:you@example.com" class="btn primary">Email me</a>
+      <a href="https://github.com/yourusername" class="btn ghost">GitHub</a>
+      <a href="https://linkedin.com/in/yourusername" class="btn ghost">LinkedIn</a>
+    </div>
+         </section>
+
+</div>
+
+
+<footer>built with HTML, CSS & JavaScript — © <span id="year"></span> Your Name</footer>
+
+   <script src="script.js"></script>
+
+
+</body>
+</html>
